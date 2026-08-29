@@ -12,6 +12,16 @@ type FadeInProps = {
   style?: React.CSSProperties;
 };
 
+const MOTION_TAGS = {
+  div: motion.div,
+  section: motion.section,
+  header: motion.header,
+  h1: motion.h1,
+  h2: motion.h2,
+  p: motion.p,
+  span: motion.span,
+} as const;
+
 export function FadeIn({
   children,
   delay = 0,
@@ -22,7 +32,7 @@ export function FadeIn({
   as = "div",
   style,
 }: FadeInProps) {
-  const MotionTag = motion.create(as as "div");
+  const MotionTag = MOTION_TAGS[as];
 
   return (
     <MotionTag
