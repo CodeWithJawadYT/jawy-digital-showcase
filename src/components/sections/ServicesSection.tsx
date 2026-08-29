@@ -27,9 +27,9 @@ const services = [
   },
   {
     number: "05",
-    name: "Business Websites",
+    name: "AI Integration",
     description:
-      "Professional, conversion-focused websites built for businesses and brands that need a strong and credible digital presence.",
+      "Intelligent AI-powered features seamlessly integrated into your website — from chat assistants to automation — to elevate user experience and business workflows.",
   },
 ];
 
