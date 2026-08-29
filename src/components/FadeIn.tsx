@@ -27,7 +27,8 @@ export function FadeIn({
   return (
     <MotionTag
       className={className ?? ""}
-      style={(style ?? {}) as React.CSSProperties}
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      style={(style ?? {}) as any}
       initial={{ opacity: 0, x, y }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, margin: "50px", amount: 0 }}
