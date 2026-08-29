@@ -32,7 +32,7 @@ export function FadeIn({
   as = "div",
   style,
 }: FadeInProps) {
-  const MotionTag = motion.create(as as "div");
+  const MotionTag = MOTION_TAGS[as];
 
   return (
     <MotionTag
