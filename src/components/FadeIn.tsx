@@ -27,7 +27,7 @@ export function FadeIn({
   return (
     <MotionTag
       className={className}
-      style={style}
+      style={style as React.ComponentProps<typeof MotionTag>["style"]}
       initial={{ opacity: 0, x, y }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, margin: "50px", amount: 0 }}
